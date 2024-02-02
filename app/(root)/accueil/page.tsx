@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Image
-        src="/Accueil.png"
+        src="/Accueil_v2.png"
         // className=""
         alt="La page Accueil"
         onLoadingComplete={() => setLoaded(true)}
