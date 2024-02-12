@@ -12,7 +12,6 @@ export default function Home() {
           {"L'utilisation d'un ordinateur est conseillé."}
           {/* <code className="font-mono font-bold">app/page.tsx</code> */}
         </p>
-        Ongemebeuled Appartement met Zuiderterras te huur - Europese wijk
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0" href="https://ywdesign.co" target="_blank" rel="noopener noreferrer">
             By <Image src="/ywdesign_logo.svg" alt="Vercel Logo" className="dark:invert" width={50} height={24} priority />
@@ -36,8 +35,8 @@ export default function Home() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Accueil v2.0<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Accueil v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation de la page d'accueil.`}</p>
         </a>
@@ -48,8 +47,8 @@ export default function Home() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Shop v2.0<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Shop v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Bienvenu au shop NU.</p>
         </a>
@@ -60,8 +59,8 @@ export default function Home() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            A Propos v2.0<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            A Propos v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Les proportions de cette page changera encore.</p>
         </a>
@@ -72,8 +71,8 @@ export default function Home() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Produit v2.0<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Produit v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une page détaillée d'un produit.`}</p>
         </a>
@@ -83,8 +82,8 @@ export default function Home() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Article v2.0<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Article v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation d'un article de la Gazette Nu.`}</p>
         </a>
