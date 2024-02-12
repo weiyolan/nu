@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Image
-        src="/Shop.png"
+        src="/Shop_v2.png"
         // className=""
         alt="La page Shop"
         onLoadingComplete={() => setLoaded(true)}
