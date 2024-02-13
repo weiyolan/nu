@@ -12,7 +12,7 @@ export default function Home() {
         // className=""
         alt="La page Blog"
         onLoad={() => setLoaded(true)}
-        className={`w-full ${loaded ? "opacity-100" : "h-0 opacity-0"} transition-opacity duration-1000`}
+        className={`w-full ${loaded ? "opacity-100" : "h-0 opacity-0"} max-w-7xl mx-auto transition-opacity duration-1000`}
         width={1280}
         height={5922}
         quality={100}
