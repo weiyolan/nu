@@ -36,7 +36,7 @@ export default function Home() {
           // rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-xl font-semibold`}>
-            Accueil v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
+            Accueil v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation de la page d'accueil.`}</p>
         </a>
@@ -48,7 +48,7 @@ export default function Home() {
           // rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-xl font-semibold`}>
-            Shop v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
+            Shop v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Bienvenu au shop NU.</p>
         </a>
@@ -60,7 +60,7 @@ export default function Home() {
           // rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-xl font-semibold`}>
-            A Propos v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
+            A Propos v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Les proportions de cette page changera encore.</p>
         </a>
@@ -72,7 +72,7 @@ export default function Home() {
           // rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-xl font-semibold`}>
-            Produit v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
+            Produit v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une page détaillée d'un produit.`}</p>
         </a>
@@ -83,7 +83,7 @@ export default function Home() {
           // rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-xl font-semibold`}>
-            Article v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"> →</span>
+            Article v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation d'un article de la Gazette Nu.`}</p>
         </a>

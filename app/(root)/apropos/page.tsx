@@ -10,8 +10,8 @@ export default function Home() {
         src="/apropos_v2.png"
         // className=""
         alt="La page A propos"
-        onLoadingComplete={() => setLoaded(true)}
-        className={`w-screen ${loaded ? "opacity-100" : "h-0 opacity-0"} transition-opacity duration-1000`}
+        onLoad={() => setLoaded(true)}
+        className={`w-full ${loaded ? "opacity-100" : "h-0 opacity-0"} transition-opacity duration-1000`}
         width={1280}
         height={5922}
         quality={100}

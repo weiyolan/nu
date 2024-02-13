@@ -9,8 +9,8 @@ export default function Home() {
         src="/Shop_v2.png"
         // className=""
         alt="La page Shop"
-        onLoadingComplete={() => setLoaded(true)}
-        className={`w-screen ${loaded ? "opacity-100" : "h-0 opacity-0"} transition-opacity duration-1000`}
+        onLoad={() => setLoaded(true)}
+        className={`w-full ${loaded ? "opacity-100" : "h-0 opacity-0"} max-w-7xl mx-auto transition-opacity duration-1000`}
         width={1280}
         height={5922}
         quality={100}
