@@ -2,15 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { ArrowLeft } from "lucide-react";
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
   return (
     <>
       <Image
-        src="/Blog_v2.png"
+        src="/Shop_v2.png"
         // className=""
-        alt="La page Blog"
+        alt="La page Shop"
         onLoad={() => setLoaded(true)}
         className={`w-full ${loaded ? "opacity-100" : "h-0 opacity-0"} max-w-7xl mx-auto transition-opacity duration-1000`}
         width={1280}
@@ -25,11 +25,12 @@ export default function Home() {
           {/* <code className="font-mono font-bold">app/page.tsx</code> */}
         </p>
       )}
+
       {loaded && (
         <Link
-          href="/"
-          className="fixed top-4 left-4 text-lg font-bold group p-2 bg-slate-50/5 backdrop-blur rounded hover:border-black transition-all  duration-300 border border-transparent">
-          <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none">{" < "}</span> Retour{" "}
+          href="/preview"
+          className="fixed top-4 left-4 text-lg  group p-2 bg-slate-50/5 backdrop-blur rounded hover:border-black transition-all duration-300 border border-transparent flex items-center">
+          <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none my-auto">{"< "}</span> Retour
         </Link>
       )}
     </>

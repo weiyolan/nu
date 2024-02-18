@@ -1,93 +1,48 @@
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
-// import Link from "next/link";
+import { Sprout } from "lucide-react";
 
-export default function Home() {
+export default function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 pt-24 sm:p-24 ">
-      {/* <UserButton afterSignOutUrl="/" /> */}
-      {/* <SignInButton /> */}
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          {"L'utilisation d'un ordinateur est conseillé."}
-          {/* <code className="font-mono font-bold">app/page.tsx</code> */}
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0" href="https://ywdesign.co" target="_blank" rel="noopener noreferrer">
-            By <Image src="/ywdesign_logo.svg" alt="Vercel Logo" className="dark:invert" width={50} height={24} priority />
-          </a>
-        </div>
+    <div className="w-full min-h-screen flex ">
+      <Image
+        src="/haar.jpg"
+        // className=""
+        alt="Cheveux"
+        // onLoad={() => setLoaded(true)}
+        className={`object-cover object-right`}
+        // width={1280}
+        fill
+        // height={5922}
+        // quality={90}
+        priority
+      />
+      <div className="flex flex-col items-start absolute top-2/3 -translate-y-1/2 left-12">
+        <svg className="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.88 104.88">
+          <path
+            className="fill-black"
+            d="M91.52,67.04c-3.54,3.29-7.21,3.93-7.54-1.68c-0.21-3.49,0.48-7.05,1.14-10.45
+		c1.82-9.34,4.76-18.43,7.07-27.65c1.41-5.62-7.14-7.99-8.68-2.39c-0.57,2.08-1.15,4.17-1.73,6.25c-1.19,4.03-2.48,8.16-3.64,12.32
+		c-0.82,2.61-1.66,5.21-2.57,7.79c-2.97,8.47-6.03,17.16-10.56,25.01c-1.41,2.45-3.95,4.48-6.13,3.55
+		c-1.58-0.68-2.41-2.35-2.41-4.96c-0.01-2.61,1.61-8.83,2.71-12.78c2.64-9.54,5.8-18.92,8.94-28.3c1.84-5.5-6.84-7.87-8.68-2.39
+		c-4.25,12.69-9.1,25.6-11.59,38.79c-1.55,8.19,3.41,20.25,13.51,18.67c7.28-1.14,11.95-8.75,15.29-16.1
+		c1.13,2.29,2.88,4.19,5.46,5.27c5.8,2.44,11.52-0.62,15.77-4.57C102.13,69.45,95.76,63.09,91.52,67.04z"
+          />
+          <path
+            className="fill-black"
+            d="M41.35,82.27c-3.14,0.97-3.32-0.89-3.06-3.96c0.3-3.49,1.42-6.99,2.4-10.34c2.23-7.57,4.74-15.07,7.14-22.59
+		c2.32-7.25,5-14.54,6.8-21.94c1.2-4.93,1.69-11.09-2-15.15c-8.88-9.76-18.53,2.48-23.67,10.81c-1.11-2.7-3.08-4.96-6.01-6.21
+		c-5.8-2.47-11.52,0.55-15.88,4.34c-4.38,3.81,2.01,10.15,6.36,6.36c3.44-3,7.7-3.62,7.62,1.9c-0.05,3.78-1.33,7.79-2.32,11.4
+		c-2.38,8.72-5.74,17.13-8.52,25.72c-1.8,5.54,6.78,7.82,8.68,2.39c0.81-2.33,1.64-4.67,2.47-7c1.21-3.25,2.49-6.56,3.68-9.9
+		c2.72-6.97,5.71-13.83,9.32-20.4c1.11-2.01,8.66-16.46,11.81-13.05c1.38,1.49-0.12,5.94-0.57,7.59c-1,3.62-2.18,7.2-3.3,10.78
+		c-4.22,13.48-9.95,27.15-12.44,41.09c-0.84,4.66-1.34,9.98,1.95,13.85c3.31,3.89,7.3,4.39,11.94,2.96
+		C49.26,89.24,46.9,80.55,41.35,82.27z"
+          />
+        </svg>
+        <h1 className="pl-2 text-3xl mb-2 leading-normal tracking-wider whitespace-pre-wrap">{"Le shampoing solide\nà base de levure de bière"}</h1>
+        <h2 className="pl-2 flex items-center">
+          Website coming soon <Sprout className="inline-flex ml-1" strokeWidth={1.5} />
+        </h2>
       </div>
-
-      <div className="relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert" src="/NU.svg" alt="NU Logo" width={180} height={37} priority />
-        <p className={`mt-8 w-full md:max-w-[45%] text-center font-light`}>
-          {`Salut Lou! Ce site vous offre une simulation de design. Explorez les différentes pages de votre site web en utilisant les boutons ci-dessous. 
-            Attention, le contenu n'est pas adaptatif à la taille de votre écran avec des proportions potentiellement sous-optimal. 
-            Le chargement initial des pages individuelles peut être long, alors veuillez patientez. Profitez! `}
-        </p>
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left">
-        <a
-          href="./accueil"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            Accueil v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation de la page d'accueil.`}</p>
-        </a>
-
-        <a
-          href="./shop"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            Shop v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Bienvenu au shop NU.</p>
-        </a>
-
-        <a
-          href="./apropos"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            A Propos v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Les proportions de cette page changera encore.</p>
-        </a>
-
-        <a
-          href="./produit"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            Produit v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une page détaillée d'un produit.`}</p>
-        </a>
-        <a
-          href="./article"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            Article v2.0 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">{">"}</span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{`Une simulation d'un article de la Gazette Nu.`}</p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }

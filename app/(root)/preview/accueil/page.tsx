@@ -1,4 +1,5 @@
 "use client";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -28,9 +29,9 @@ export default function Home() {
       )}
       {loaded && (
         <Link
-          href="/"
-          className="fixed top-4 left-4 text-lg font-bold group p-2 bg-slate-50/5 backdrop-blur rounded hover:border-black transition-all  duration-300 border border-transparent">
-          <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none">{" < "}</span> Retour{" "}
+          href="/preview"
+          className="fixed top-4 left-4 text-lg  group p-2 bg-slate-50/5 backdrop-blur rounded hover:border-black transition-all  duration-300 border border-transparent">
+          <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none">{"< "}</span> Retour{" "}
         </Link>
       )}
     </>

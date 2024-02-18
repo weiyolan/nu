@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Alegreya_Sans, Inter, Mulish } from "next/font/google";
+import { Alegreya_Sans, Corben, Inter, Mulish } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 // const alegreya = Alegreya_Sans({ subsets: ["latin"], weight: ["300", "400", "700"] });
-
+const corben = Corben({ weight: ["400", "700"], subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head> */}
-      <body className={` ${mulish.className} `}>
+      <body className={` ${corben.className} `}>
         {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange> */}
         {/* <Navbar /> */}
         {children}
