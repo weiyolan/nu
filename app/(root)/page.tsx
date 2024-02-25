@@ -3,20 +3,21 @@ import { Sprout } from "lucide-react";
 
 export default function page() {
   return (
-    <div className="w-full min-h-screen flex ">
+    <div className="w-full h-screen flex overflow-hidden relative ">
       <Image
         src="/haar.jpg"
         // className=""
         alt="Cheveux"
         // onLoad={() => setLoaded(true)}
-        className={`object-cover object-right`}
+        className={`select-none object-cover object-center`}
         // width={1280}
         fill
         // height={5922}
         // quality={90}
         priority
       />
-      <div className="flex flex-col items-start absolute top-2/3 -translate-y-1/2 left-12">
+      <div className="w-48 h-48 absolute bg-white/60 -right-4 top-4 blur-3xl md:hidden"></div>
+      <div className="flex flex-col items-start absolute top-12 md:top-2/3 pl-4 md:-translate-y-1/2 left-0 md:pl-12">
         <svg className="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.88 104.88">
           <path
             className="fill-black"
@@ -38,7 +39,7 @@ export default function page() {
 		C49.26,89.24,46.9,80.55,41.35,82.27z"
           />
         </svg>
-        <h1 className="pl-2 text-3xl mb-2 leading-normal tracking-wider whitespace-pre-wrap">{"Le shampoing solide\nà base de levure de bière"}</h1>
+        <h1 className="pl-2 text-3xl mb-2 leading-normal tracking-wide whitespace-pre-wrap">{"Le shampoing solide\nà base de levure de bière"}</h1>
         <h2 className="pl-2 flex items-center">
           Website coming soon <Sprout className="inline-flex ml-1" strokeWidth={1.5} />
         </h2>
